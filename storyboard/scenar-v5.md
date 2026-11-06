@@ -39,7 +39,7 @@ Střih z prudkého tahu do klidu. V kolmém pohledu spočívá obvázaná ruka p
 Rohové logo přenes doprostřed světlého stolu. Vlevo otevři Outcome, Injury a karty nalezené výbavy, vpravo čtyři středověké karty v mřížce 2 × 2: Domobrana / Militia, Žalář / Dungeon, Kuše / Crossbow a Lucerna / Lantern. Pro postavu je připravený existující obraz člena domobrany medieval_militia. Nech logu vlastní okamžik. Bez VO.
 
 ### 08 · Výzva ke hře · 45–50 s · 1350–1500
-Samostatný střih na hotovou krabici Mighty Decks sestavenou z dodané tiskové grafiky víka a boků. Po celých 150 snímků čitelně drž text, adresu a QR kód vedoucí na https://board-game-prototypes.netlify.app/mighty-decks. Na replice hráčky vlevo dole její portrét a vedle něj titulek, odděleně od CTA.
+Samostatný střih zpět na dřevěný stůl hráčky a vypravěče. Světlo lampy dopadá na hotovou krabici Mighty Decks sestavenou z dodané tiskové grafiky víka a boků. Po celých 150 snímků čitelně drž text, adresu a QR kód vedoucí na https://board-game-prototypes.netlify.app/mighty-decks. Na replice hráčky vlevo dole její portrét a vedle něj titulek, odděleně od CTA.
 
 CZ · „Stolní RPG bez kostek“ / „Pravidla a karty k tisku“ · Hráčka „Vytiskni si karty a zahraj si Mighty Decks.“  
 EN · “Diceless tabletop RPG” / “Rules & printable cards” · Player “Print your deck and play Mighty Decks.”  
