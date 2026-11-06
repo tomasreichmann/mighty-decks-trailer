@@ -1,0 +1,145 @@
+{
+  "catalogVersion": "2026-09-18",
+  "poznamka": "Česká redakce pro trailer. EN je přepis katalogu. Překlad zachovává počet efektů a úplné znění pravidel.",
+  "cards": [
+    {
+      "id": "outcome:success",
+      "source": {
+        "title": "Success",
+        "body": "It worked!",
+        "footer": "2 Effect",
+        "deck": "base"
+      },
+      "cs": {
+        "title": "Úspěch",
+        "body": "Vyšlo to!",
+        "footer": "+2 Efekt",
+        "deck": "základ"
+      }
+    },
+    {
+      "id": "outcome:partial-success",
+      "source": {
+        "title": "Partial Success",
+        "body": "It mostly worked",
+        "footer": "1 Effect",
+        "deck": "base"
+      },
+      "cs": {
+        "title": "Částečný úspěch",
+        "body": "Vyšlo to zčásti.",
+        "footer": "+1 Efekt",
+        "deck": "základ"
+      }
+    },
+    {
+      "id": "outcome:fumble",
+      "source": {
+        "title": "Fumble",
+        "body": "The action most likely fails.\nThe Storyteller may allow partial success with a serious Complication.",
+        "footer": "Catastrophe: 3 or only Fumbles after draw.",
+        "deck": "base"
+      },
+      "cs": {
+        "title": "Selhání",
+        "body": "Obvykle selžeš. Se svolením vypravěče: částečný úspěch + vážná komplikace.",
+        "footer": "Katastrofa: po dobrání tři Selhání nebo samá Selhání.",
+        "deck": "základ"
+      }
+    },
+    {
+      "id": "effect:injury",
+      "source": {
+        "title": "Injury",
+        "body": "4x Injury ➜ Taken Out.",
+        "footer": "Use an action or an Asset to heal and discard.",
+        "deck": "base"
+      },
+      "cs": {
+        "title": "Zranění",
+        "body": "4× Zranění → vyřazení.",
+        "footer": "Vyleč se akcí nebo výbavou a kartu odhoď.",
+        "deck": "základ"
+      }
+    },
+    {
+      "id": "asset-base:base_light_weapon",
+      "source": {
+        "title": "Light Weapon",
+        "body": "When attacking with Success or better, you may also play a Partial Success to attack again.",
+        "deck": "base"
+      },
+      "cs": {
+        "title": "Lehká zbraň",
+        "body": "Při útoku s Úspěchem či lepším můžeš za Částečný úspěch zaútočit znovu.",
+        "deck": "základ"
+      }
+    },
+    {
+      "id": "asset-base:base_heavy_armor",
+      "source": {
+        "title": "Heavy Armor",
+        "body": "Reduce received Injury by 1.",
+        "deck": "base"
+      },
+      "cs": {
+        "title": "Těžká zbroj",
+        "body": "Utrpíš o 1 Zranění méně.",
+        "deck": "základ"
+      }
+    },
+    {
+      "id": "actor-base:medieval_militia",
+      "source": {
+        "title": "Militia",
+        "deck": "medieval"
+      },
+      "cs": {
+        "title": "Člen domobrany",
+        "deck": "středověk"
+      }
+    },
+    {
+      "id": "location:medieval_dungeon",
+      "source": {
+        "title": "Dungeon",
+        "deck": "medieval"
+      },
+      "cs": {
+        "title": "Žalář",
+        "deck": "středověk"
+      }
+    },
+    {
+      "id": "asset-base:medieval_crossbow",
+      "source": {
+        "title": "Crossbow",
+        "body": "A heavy two-handed ranged weapon. Range: 1-2 zones. Ignores Plate Armor. -1 Effect when shooting targets in the same zone.",
+        "deck": "medieval"
+      },
+      "cs": {
+        "title": "Kuše",
+        "body": "Těžká obouruční zbraň. Dosah 1–2 zóny. Ignoruje plátovou zbroj. Ve vlastní zóně −1 Efekt při střelbě.",
+        "deck": "středověk"
+      }
+    },
+    {
+      "id": "asset-base:medieval_lantern",
+      "source": {
+        "title": "Lantern",
+        "body": "Provides light in the current zone. Can be used in the rain. Does not count as an open flame.",
+        "deck": "medieval"
+      },
+      "cs": {
+        "title": "Lucerna",
+        "body": "Osvítí tvou zónu i v dešti. Nepočítá se jako otevřený oheň.",
+        "deck": "středověk"
+      }
+    }
+  ],
+  "ceske_zdroje": {
+    "terminologie": "board-game-prototypes/board-game-prototypes/src/prototypes/kick-ass-cards/data/outcomes.csv a effects.csv",
+    "pravidla": "Český prototyp má odlišné podmínky Selhání, Zranění a Částečného úspěchu. Formulace v traileru zachovávají anglický katalog Components.",
+    "vybava": "V AI Storyteller spec/assetCards.ts jsou anglické názvy. Těžká zbroj je lokalizace Heavy Armor pro trailer."
+  }
+}

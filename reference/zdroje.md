@@ -1,0 +1,21 @@
+# Obrazové podklady a původ
+
+Aktuální výběr a priority jsou v [předání v5](../handoff/START.md). V podsložce vyber jsou soubory pro výrobu, v archiv jsou původní návrhy umožňující dohledat výběr A/B/C a 1/2/3.
+
+- **Handoff v4** je uložený jako archiv/handoff-v4.txt včetně původních replik, zvuku, odkazů a střihů. Původní obrazové tabule jsou ve stejné složce. Pozdější rozhodnutí o rozložení, velikosti karet, kořisti a české sazbě jsou ve v5. [Google Doc v4](https://docs.google.com/document/d/1cZB5d6qfO46KD202fTTqi8yLtmLn0v7SJFCXkmd9H7c/edit)
+- **Exiles.** Záběry vycházejí z předloh korvety, hangáru, pašeráků a mallowtailů v exiles. Starší předlohy vybavení jsou v této složce pro historii. Tvar aktuální kořisti určují líce base_light_weapon a base_heavy_armor z Components. [Encounter](https://github.com/tomasreichmann/exiles-of-the-hungry-void/blob/main/encounters/example-large.md)
+- **Logo a papír.** grafika/mighty_decks_logo.png je původní logo stolní hry z board-game-prototypes/board-game-prototypes/public/mighty-decks. Papír a rub karty pocházejí z mighty-decks-ai-storyteller/apps/web/public/backgrounds. [AI Storyteller](https://mighty-decks-ai-storyteller.onrender.com/)
+- **Karty.** en obsahuje anglické exporty výšky 1024 px z mighty-decks-components/generated/png/en. cs obsahuje české líce ze stejného rendereru včetně ilustrací a typografie. Katalog má contentVersion 2026-09-18. texty-en-cs.json obsahuje odpovídající identifikátory i texty. Ve složce ruka je osm typů v každém jazyce (tři výsledky, Zranění, Lehká zbraň, Těžká zbroj, Kuše a Lucerna) se zvětšeným názvem a pravidly pro obrazovku. Všech deset referenčních typů zahrnuje výsledky, zranění, zbraň, zbroj, domobranu a lokaci. Karabina v hangáru má samostatný výběr podle modelu. [Components](https://github.com/tomasreichmann/mighty-decks-components)
+- **Ilustrace návrhů.** Imagegen vytvořil skici B, původní kořist C a tušové podklady rampy a stolu podle vizuálních referencí Exiles. archiv/B-ocima-hracky.png zachycuje celý původní výběrový arch včetně jeho tehdejší kořisti. Pro S06 ber výhradně korist-tus.png. V novém obrazu zůstává u pantu obvázaná ruka. Palubní čepel a kyrys s přezkou se dají porovnat se dvěma skutečnými kartami, které se přidávají při sazbě.
+
+## Obrazové podklady po kontrole jednotlivých záběrů
+
+Pro aktuální storyboard vzniklo devět samostatných tušových ilustrací podle schválených skic a čtyři samostatně oříznutelné portréty. První sada kreseb 1672 × 941 px byla zpracována na místním ComfyUI modelem Real-ESRGAN x2plus a převzorkována na 1920 × 1080, před vložením typografie a líců karet. Připravené čisté obrazy jsou v planches, schválené výřezy a příklady kompozice ve vyber. [Obě lokalizované sady obrazovek](../storyboard/screens/index.html)
+
+Společný záběr u stolu, kolmý detail a nová bedna byly následně samostatně překresleny podle referencí a srovnány do formátu 1920 × 1080.
+
+## České názvy a pravidla karet
+
+Prohledány byly místní kopie mighty-decks-ai-storyteller a board-game-prototypes. V prvním repozitáři spec/assetCards.ts uvádí Light Weapon a Heavy Armor anglicky. České názvy Úspěch, Částečný úspěch, Selhání, Zranění a stručný zápis +2 Efekt / +1 Efekt vycházejí z dat staršího prototypu. Jeho pravidla pro Katastrofu, Zranění a Částečný úspěch se místy liší od dnešního katalogu. U těchto karet je použit stručný český překlad současných mechanik; zdrojové anglické věty i české znění jsou vedle sebe v [lokalizační tabulce](karty/texty-en-cs.json). Pro titul Heavy Armor jsme zvolili Těžká zbroj. [České výsledky](https://github.com/tomasreichmann/board-game-prototypes/blob/main/src/prototypes/kick-ass-cards/data/outcomes.csv) · [Česká zranění a efekty](https://github.com/tomasreichmann/board-game-prototypes/blob/main/src/prototypes/kick-ass-cards/data/effects.csv)
+
+**Krabice a rampa.** Fotografie vyrobené krabice a původní tiskový rozkres jsou ve složce krabice. Na CTA se používá [krabice s průhledným pozadím](grafika/mighty-decks-krabice.png). Víko a dvě boční stěny se promítají přímo z poskytnuté grafiky, kterou lze znovu vysadit [skriptem render_box.py](../tools/render_box.py). Záběr rampa-jump v planches odděluje přeskok nad šachtou od okamžiku, kdy posádka bezpečně překročí práh.

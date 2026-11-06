@@ -1,0 +1,79 @@
+Fangs in the Sun
+
+Mighty Decks • Storyboard ke schválení / CZ + EN • v4
+
+Co má divák zažít
+
+Divák pozná pravidlo při vyjednávání a při souboji už sleduje, která karta hráčce zůstala. U rampy poprvé uvidí hráčku a vypravěče spolu u stolu a uslyší, proč přijme zranění. Pracovní délka 50 s, 16:9.
+
+Obrazový a zvukový scénář
+
+00–06   /   Korveta v protisvětle
+
+Velký celek. Hvězda vyplní záběr. Přes její kotouč pomalu přejede černá silueta lodi. Slunce na okamžik prosvítí prázdnými šachtami záchranných modulů. V tichu třikrát zapraská rádio. Teprve třetí zvuk je hlas. Referenční obraz: fangs_in_the_sun.png. Od prvního obrazu malé původní logo Mighty Decks vpravo nahoře, šířka 8 % obrazu, odsazení 4 %. Stejná pozice po celý příběh. Při prvním zapraskání rádia se vlevo objeví portrét pašeráka s označením „Pašerák / Smuggler“. Střed zůstává otevřený pro siluetu lodi. Karty se poprvé objeví až u vyjednávání.
+CZ · Pašerák přes rádio: „Slyší nás někdo? Zůstali jsme tu tři.“
+EN · Smuggler over comms: “Does anyone read? There’s three of us still aboard.”
+
+06–14   /   Dohoda přes přepážku
+
+06–09 · Pašerák přes zavřený průzor nabízí cestu přes blokádu. Vyhnankyně drží páku a trvá na souřadnicích před otevřením. Vlevo se s hlasem vystřídají portréty. 09–11 · Vpravo dole hráčka vysune Success z ruky [Success, Success, Partial Success]. 11–14 · Souřadnice se rozsvítí na jejím zápěstí, pak otevře dveře. Zahraná karta odjede na odhazovací hromádku; z balíčku přiletí Fumble do volného místa. Tři karty jsou znovu pohromadě.
+CZ · Pašerák: „Vytáhni nás. Znám cestu přes blokádu.“ Vyhnankyně: „Nejdřív souřadnice.“ Pašerák: „Posílám.“
+EN · Smuggler: “Get us out. I know a way past the blockade.” Exile: “Coordinates first.” Smuggler: “Sending.”
+Repliky a souřadnice jsou trailerovou obměnou motivu Smuggler Rescue Debt.
+
+14–22   /   Souboj v hangáru
+
+14–16 · Vyhnankyně zvedne karabinu napříč proti skákající alfě. V centru vidíme zbraň v jejích rukou; vpravo dole krátce detail karty zbraně. 16–19 · Karta zbraně ustoupí ruce. Hráčka zahraje Partial Success. Pažba zadrží čelisti, dráp však roztrhne vyhnankyni rukáv a škrábne ji. U jejího portrétu krátce blikne značka zásahu, vpravo dole uvidíme Injury s jejím jménem. 19–22 · Pašeráci s bednou a mládětem proklouznou pod roletou. Hráčka odhodí zahranou kartu a dobere další Partial Success. Za člunem se odtrhne žhavý kus trupu.
+CZ · Vyhnankyně: „Zadržím ji. Běžte!“
+EN · Exile: “I’ll hold her. Go!”
+V detailu ukázat stopu drápu přesně tam, kde zasáhl. První Injury patří vyhnankyni; případné zranění pašeráka na rampě ukázat samostatně. Karabina slouží ke krytu, hodnotu střelného útoku v tomto záběru neuplatňovat.
+
+22–31   /   Jediný Úspěch
+
+22–25 · Vypravěče slyšíme přes obraz zborcené rampy. Vlevo jeho označený portrét, vpravo dole hráččina ruka [Success, Partial Success, Fumble]. 25–29 · Jakmile hráčka řekne „Úspěch potřebuju…“, ostrý střih do polocelku stolu. Vidíme ji i vypravěče naproti, mezi nimi karty. Hráčka se dívá na vypravěče, prst má na Úspěchu. V tichu sjede na Partial Success. 29–31 · Až při položení karty střih zpět. Bedna žuchne na rampu. Jeden pašerák si při přeskoku poraní paži; všichni tři i s mládětem a bednou překročí práh. V rohu dobere hráčka Fumble.
+CZ · Vypravěč: „Přes rampu to bude bolet.“ Hráčka: „Úspěch potřebuju na záchranu lodi.“ [pauza] „Hraju částečný. Beru zranění.“
+EN · Storyteller: “That ramp will cost you.” Player: “I need my Success to save our ship.” [beat] “I’ll play the Partial. We take the injury.”
+
+31–36   /   Teď ten Úspěch
+
+U zraněného pašeráka se objeví jeho Injury. Z ruky [Success, Fumble, Fumble] hráčka konečně zahraje schovaný Success. Pohyb prstu přejde ve stejném směru v pohyb páky bočního tahu. Vlastní člun uhne před troskami korvety. Vpravo dole odhodit a dobrat Success; při střihu na bednu herní karty uvolní obraz.
+CZ · Hráčka: „Teď. Plný boční tah.“
+EN · Player: “Now. Full lateral thrust.”
+
+36–41   /   Co jsme přivezli
+
+Poslední příběhový záběr. Pohled shora do otevírané bedny. U pantů je ruka v provizorním obvazu. Mládě vystrčí čumák do rohu záběru a očichá zapečetěnou dózu. V levé třetině vyjede karta Surge, v pravé Valuables. Jemná spojnice vede ke skutečnému předmětu. Střed zůstane volný. Po cvaknutí zámku dvě sekundy klid, jen funění mláděte.
+CZ / EN · Beze slov.
+41–45   /   Logo a přehled karet
+Rohové logo se přesune doprostřed světlého stolu. Po stranách se rozevřou dvě skupiny pravých karet: Outcome, Injury a sci-fi kořist vlevo; středověký strážný a lokace Medieval Dungeon vpravo. Logo dostane vlastní okamžik. Bez VO.
+
+45–50   /   Výzva ke hře
+Na nový střih zůstane jeden balíček a text „Stolní RPG bez kostek“ / “Diceless tabletop RPG”. Zobrazit „Pravidla a karty k tisku“ / “Rules & printable cards” a board-game-prototypes.netlify.app/mighty-decks. Držet všech pět sekund. Oba přímé odkazy v popisu.
+CZ · Hráčka: „Vytiskni si karty a zahraj si Mighty Decks.“
+EN · Player: “Print your deck and play Mighty Decks.”
+
+Vizuál a podklady
+
+Exiles určuje podobu korvety a tvorů. AI Storyteller určuje logo, typografii a grafiku stolu: Kalam, Passion One, Shantell Sans; železná #121B23, kostěná #EFD9BB, ocelová #7B8EA6. V gradaci světla používat postupně delší zlatý odlesk na kovu; nepřekrývat kontury. V titulcích vykreslit českou diakritiku. Skutečné EN karty z Components doplnit v české verzi externím popiskem. Kompozice pro fikci: vlevo portrét právě mluvící postavy a jméno/role, hlavní akce uprostřed, vpravo nahoře logo a vpravo dole ruka. Stálá pozice, výměna portrétu na první slabice. V češtině a angličtině použít lokalizované role. Karty zbraně a Injury se ukazují jednotlivě v témže prostoru, vedle ruky. V polocelku stolu identitu převezmou tváře s krátkými jmenovkami, ruku vidíme fyzicky. U tiché bedny mají přednost dvě karty kořisti po stranách.
+
+Existující soubory v repu Exiles: assets/scenes/fangs_in_the_sun.png, fangs_in_the_sun_crew_deck.png a fangs_in_the_sun_hangar.png (všechny ve scenes); assets/characters/alpha_mallowtail.png a smuggler_survivor.png. Referenční siluetu držet na šesti končetinách, srst krémová a korálová. Assets použít jako předlohu pro návaznost, ověřit rozlišení a výřezy na místě.
+
+Lokální fronta Codex / ComfyUI: S01 oddělit korvetu od hvězdy; S02 průzor a páka; S03 útok alfy, mládě a bedna v pozadí; S04 zraněný pašerák na rampě; S05 průlet úlomku kolem vlastního člunu; S06 otevřená bedna, obvázaná ruka, mládě a dva předměty odpovídající kartám. Držet stejnou bednu, zraněnou paži, barvu srsti a nasvícení. Pravé karty, spojnice i logo vložit v Remotionu. Obě koncové scény vyrobit ze stávajících komponent. Doplnit dvojportrét stolu pro S04, detail fyzické ruky ve stejné orientaci jako v overlayi a samostatné portréty všech mluvčích. Pro S03 připravit karabinu v postoji krytu a roztržený rukáv po zásahu. Ve storyboardu je karabina pracovní volba; při přípravě assetů spárovat model zbraně s odpovídající katalogovou kartou.
+
+Střih, hlasy a hudba
+
+Remotion + TS, Vite pro Player, Tailwind tokeny. 1920 × 1080 / 30 fps. Pracovní střihové body: 0, 180, 420, 660, 930, 1080, 1230, 1350, 1500. Locale řídí VO i titulky. CTA držet minimálně 150 snímků. Rohové logo jednou instancí plynule přenést do hlavní kompozice. K původním kartám přidat Injury, base_surge, base_valuables a medieval_dungeon. Pro středověkého strážného použít existující ActorCard.
+
+Hlas vyhnankyně i hráčky patří stejné interpretce. Přesun od role ke stolu vytváří změna prostoru. Pašerák mluví úsporně, na jeden dech. Vypravěč klidně. Po schválení zkusit na místním TTS výměnu „Kontakt chci hned. – Platí.“ Pokud výkon neobstojí v poslechu naslepo, na fal.ai vyzkoušet MiniMax Speech 2.8 HD s language_boost Czech / English. Uložit výběr hlasů, parametry a WAV po replikách. Hudba: nejprve vyzkoušet Exiles – Leaking Air. Nízký puls od dohody, přerušit jej při dopadu karty, únik do ticha. Výběr skladby potvrdit poslechem a právy pro zveřejnění.
+
+Přejímka animatiku: i bez zvuku musí být jasný mluvčí, vlastník zbraně, příjemce Injury a cesta každé hrané a dobrané karty. Držet přečtený stav karet přes střih ke skutečnému stolu. Úspěch šetřený na člun zůstává tentýž. Zkontrolovat na mobilu čitelnost ruky i koncovky; pokud dva detaily soutěží, posunout jejich načasování. Po schválení animatik, CZ / EN MP4, SRT a audio stopy.
+
+Zdroje a cíle
+
+Fangs in the Sun, aktuální encounter: https://github.com/tomasreichmann/exiles-of-the-hungry-void/blob/main/encounters/example-large.md
+Exiles: https://exiles-of-the-hungry-void.tomasreichmann.workers.dev/
+Vizuální reference: https://mighty-decks-ai-storyteller.onrender.com/
+Karty a pravidla: https://github.com/tomasreichmann/mighty-decks-components
+Pravidla: https://board-game-prototypes.netlify.app/mighty-decks/rules
+Tisk: https://board-game-prototypes.netlify.app/mighty-decks/preparing-the-game/outcome-cards
+Trasy ověřeny ve zdrojovém kódu; před exportem otevřít odkazy na nasazeném webu a ověřit tisk. TTS: https://fal.ai/models/fal-ai/minimax/speech-2.8-hd/api
