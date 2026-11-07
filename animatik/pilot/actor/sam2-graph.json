@@ -1,0 +1,261 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "md-fangs-actor-source-green.png"
+    }
+  },
+  "2": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "md-fangs-h3-actor-lossless.webp"
+    }
+  },
+  "3": {
+    "class_type": "DownloadAndLoadSAM2Model",
+    "inputs": {
+      "model": "sam2_hiera_base_plus.safetensors",
+      "segmentor": "single_image",
+      "device": "cuda",
+      "precision": "bf16"
+    }
+  },
+  "4": {
+    "class_type": "DownloadAndLoadSAM2Model",
+    "inputs": {
+      "model": "sam2_hiera_base_plus.safetensors",
+      "segmentor": "video",
+      "device": "cuda",
+      "precision": "bf16"
+    }
+  },
+  "art-face": {
+    "class_type": "Sam2Segmentation",
+    "inputs": {
+      "sam2_model": [
+        "3",
+        0
+      ],
+      "image": [
+        "art-face-crop",
+        0
+      ],
+      "keep_model_loaded": false,
+      "coordinates_positive": "[{\"x\": 63, \"y\": 88}, {\"x\": 82, \"y\": 100}, {\"x\": 89, \"y\": 115}, {\"x\": 99, \"y\": 103}, {\"x\": 97, \"y\": 76}, {\"x\": 92, \"y\": 63}, {\"x\": 85, \"y\": 44}, {\"x\": 37, \"y\": 83}]",
+      "coordinates_negative": "[{\"x\": 20, \"y\": 21}, {\"x\": 57, \"y\": 32}, {\"x\": 23, \"y\": 112}, {\"x\": 119, \"y\": 103}, {\"x\": 110, \"y\": 123}, {\"x\": 51, \"y\": 132}, {\"x\": 27, \"y\": 33}, {\"x\": 46, \"y\": 39}, {\"x\": 64, \"y\": 26}, {\"x\": 33, \"y\": 105}, {\"x\": 21, \"y\": 108}, {\"x\": 16, \"y\": 49}, {\"x\": 116, \"y\": 51}]",
+      "individual_objects": false
+    }
+  },
+  "art-face-image": {
+    "class_type": "MaskToImage",
+    "inputs": {
+      "mask": [
+        "art-face",
+        0
+      ]
+    }
+  },
+  "art-face-save": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "art-face-image",
+        0
+      ],
+      "filename_prefix": "mighty_decks/sam2/art-face"
+    }
+  },
+  "tracked-face": {
+    "class_type": "Sam2Segmentation",
+    "inputs": {
+      "sam2_model": [
+        "4",
+        0
+      ],
+      "image": [
+        "tracked-face-crop",
+        0
+      ],
+      "keep_model_loaded": false,
+      "coordinates_positive": "[{\"x\": 63, \"y\": 88}, {\"x\": 82, \"y\": 100}, {\"x\": 89, \"y\": 115}, {\"x\": 99, \"y\": 103}, {\"x\": 97, \"y\": 76}, {\"x\": 92, \"y\": 63}, {\"x\": 85, \"y\": 44}, {\"x\": 37, \"y\": 83}]",
+      "coordinates_negative": "[{\"x\": 20, \"y\": 21}, {\"x\": 57, \"y\": 32}, {\"x\": 23, \"y\": 112}, {\"x\": 119, \"y\": 103}, {\"x\": 110, \"y\": 123}, {\"x\": 51, \"y\": 132}, {\"x\": 27, \"y\": 33}, {\"x\": 46, \"y\": 39}, {\"x\": 64, \"y\": 26}, {\"x\": 33, \"y\": 105}, {\"x\": 21, \"y\": 108}, {\"x\": 16, \"y\": 49}, {\"x\": 116, \"y\": 51}]",
+      "individual_objects": false
+    }
+  },
+  "tracked-face-image": {
+    "class_type": "MaskToImage",
+    "inputs": {
+      "mask": [
+        "tracked-face-parts",
+        0
+      ]
+    }
+  },
+  "tracked-face-save": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "tracked-face-image",
+        0
+      ],
+      "filename_prefix": "mighty_decks/sam2/tracked-face"
+    }
+  },
+  "art-hand": {
+    "class_type": "Sam2Segmentation",
+    "inputs": {
+      "sam2_model": [
+        "3",
+        0
+      ],
+      "image": [
+        "art-hand-crop",
+        0
+      ],
+      "keep_model_loaded": false,
+      "coordinates_positive": "[{\"x\": 92, \"y\": 52}, {\"x\": 129, \"y\": 56}, {\"x\": 147, \"y\": 45}, {\"x\": 170, \"y\": 47}, {\"x\": 190, \"y\": 59}, {\"x\": 204, \"y\": 69}, {\"x\": 209, \"y\": 74}, {\"x\": 222, \"y\": 74}]",
+      "coordinates_negative": "[{\"x\": 18, \"y\": 27}, {\"x\": 25, \"y\": 78}, {\"x\": 53, \"y\": 31}, {\"x\": 124, \"y\": 32}, {\"x\": 172, \"y\": 83}, {\"x\": 231, \"y\": 64}, {\"x\": 183, \"y\": 20}]",
+      "individual_objects": false
+    }
+  },
+  "art-hand-image": {
+    "class_type": "MaskToImage",
+    "inputs": {
+      "mask": [
+        "art-hand",
+        0
+      ]
+    }
+  },
+  "art-hand-save": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "art-hand-image",
+        0
+      ],
+      "filename_prefix": "mighty_decks/sam2/art-hand"
+    }
+  },
+  "tracked-hand": {
+    "class_type": "Sam2Segmentation",
+    "inputs": {
+      "sam2_model": [
+        "4",
+        0
+      ],
+      "image": [
+        "tracked-hand-crop",
+        0
+      ],
+      "keep_model_loaded": false,
+      "coordinates_positive": "[{\"x\": 92, \"y\": 52}, {\"x\": 129, \"y\": 56}, {\"x\": 147, \"y\": 45}, {\"x\": 170, \"y\": 47}, {\"x\": 190, \"y\": 59}, {\"x\": 204, \"y\": 69}, {\"x\": 209, \"y\": 74}, {\"x\": 222, \"y\": 74}]",
+      "coordinates_negative": "[{\"x\": 18, \"y\": 27}, {\"x\": 25, \"y\": 78}, {\"x\": 53, \"y\": 31}, {\"x\": 124, \"y\": 32}, {\"x\": 172, \"y\": 83}, {\"x\": 231, \"y\": 64}, {\"x\": 183, \"y\": 20}]",
+      "individual_objects": false
+    }
+  },
+  "tracked-hand-image": {
+    "class_type": "MaskToImage",
+    "inputs": {
+      "mask": [
+        "tracked-hand",
+        0
+      ]
+    }
+  },
+  "tracked-hand-save": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "tracked-hand-image",
+        0
+      ],
+      "filename_prefix": "mighty_decks/sam2/tracked-hand"
+    }
+  },
+  "art-face-crop": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "1",
+        0
+      ],
+      "x": 215,
+      "y": 81,
+      "width": 157,
+      "height": 160
+    }
+  },
+  "tracked-face-crop": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "2",
+        0
+      ],
+      "x": 215,
+      "y": 81,
+      "width": 157,
+      "height": 160
+    }
+  },
+  "art-hand-crop": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "1",
+        0
+      ],
+      "x": 143,
+      "y": 276,
+      "width": 257,
+      "height": 112
+    }
+  },
+  "tracked-hand-crop": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "2",
+        0
+      ],
+      "x": 143,
+      "y": 276,
+      "width": 257,
+      "height": 112
+    }
+  },
+  "tracked-face-detail": {
+    "class_type": "Sam2Segmentation",
+    "inputs": {
+      "sam2_model": [
+        "3",
+        0
+      ],
+      "image": [
+        "tracked-face-crop",
+        0
+      ],
+      "keep_model_loaded": false,
+      "coordinates_positive": "[{\"x\": 63, \"y\": 88}, {\"x\": 82, \"y\": 100}, {\"x\": 89, \"y\": 115}, {\"x\": 99, \"y\": 103}, {\"x\": 97, \"y\": 76}, {\"x\": 92, \"y\": 63}, {\"x\": 85, \"y\": 44}, {\"x\": 37, \"y\": 83}]",
+      "coordinates_negative": "[{\"x\": 20, \"y\": 21}, {\"x\": 57, \"y\": 32}, {\"x\": 23, \"y\": 112}, {\"x\": 119, \"y\": 103}, {\"x\": 110, \"y\": 123}, {\"x\": 51, \"y\": 132}, {\"x\": 27, \"y\": 33}, {\"x\": 46, \"y\": 39}, {\"x\": 64, \"y\": 26}, {\"x\": 33, \"y\": 105}, {\"x\": 21, \"y\": 108}, {\"x\": 16, \"y\": 49}, {\"x\": 116, \"y\": 51}]",
+      "individual_objects": false
+    }
+  },
+  "tracked-face-parts": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "tracked-face",
+        0
+      ],
+      "source": [
+        "tracked-face-detail",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "operation": "multiply"
+    }
+  }
+}

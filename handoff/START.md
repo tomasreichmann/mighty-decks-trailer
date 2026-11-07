@@ -34,6 +34,20 @@ Karty výsledků, Zranění, Lehká zbraň a Těžká zbroj ber pro obraz ze sad
 | [Nová kořist](../reference/vyber/korist-kompozice-cs.png) a [čistá ilustrace](../reference/vyber/korist-tus.png) | Dva konkrétní předměty, jejich přiřazení, obvaz, mládě |
 | [Texty karet](../reference/karty/texty-en-cs.json), složky en, cs a ruka | Anglické exporty, české líce ze stejné komponenty a obě obrazovkové sady s větší sazbou |
 | [Původ a použití referencí](../reference/zdroje.md) | Illustratorní podklady, originální logo, zdroj karet a historie návrhů |
-| [Prompt pro další fázi](prompt-pro-storyboard.txt) | Zkopírovat do dalšího chatu |
+| [Rozsah revize storyboardu](prompt-pro-storyboard.txt) | Zachovat při dalších výtvarných úpravách |
 
-Další schvalovací výstup tvoří dvě barevné statické sady CS a EN, popis pohybu a střihů, časovaný návrh hudby a ruchů, dva scénáře VO s vedením hlasů a záznam nezávislé vizuální kontroly po opravách. Podrobný a kopírovatelný [handoff pro tuto fázi](prompt-pro-storyboard.txt).
+## Předání do animatiku
+
+[Zadání pro výrobu animatiku](prompt-pro-animatik.txt) odkazuje na tyto pracovní podklady:
+
+| Podklad | Rozhodnutí pro výrobu |
+|---|---|
+| [Barevná tabule CS](../storyboard/storyboard-v5.png) a [EN](../storyboard/storyboard-en.png) | Všech 13 časovaných obrazů s akcí a řečí nebo tichem v daném jazyce |
+| [Režie pohybu a střihů](../storyboard/pohyb-a-strih.md) | Počáteční a koncové pózy, držení líců, příčina střihu a směr pozornosti |
+| [Střihová data](../storyboard/strih.json) | Společné intervaly všech obrazů, cesty k čistým kresbám a události čtyř zahraných karet |
+| [Prohlížeč vrstev](../storyboard/vrstvy/index.html) · [rozklad stolu](../storyboard/vrstvy/index.html#table) | Originál, jednotlivé plány a zkouška doporučeného posunu na ilustraci |
+| [Zvuková mapa a nahrávací listy CS/EN](../storyboard/zvuk-a-hlasy.md) | Časový rozpočet vět, pauzy, konkrétní ruchy a nástupy |
+| [Komponenty a plán implementace](technicke-reseni-animatiku.md) | Stav ruky, pořadí vrstev, společná kompozice, pracovní náhrady a podmínky předání |
+| [Nezávislá kontrola exportů](../storyboard/vizualni-kontrola.md) | Co bylo čitelné na telefonu, opravy a co zbývá ověřit za pohybu |
+
+**Herna, 25–27 s:** Pod hráččinou rukou leží tři drobné karty. Na širokém záběru je důležitý jejich počet a rozmístění, jména odhalí až kolmý detail. U vypravěče je dobírací balíček, zprava do obrazu zasahuje roh krabice. Lampa má patku na samostatném stolku; stěna mezi knihovnami je bez rostlin. Aktuální ilustrace je [table.png](../reference/planches/table.png).

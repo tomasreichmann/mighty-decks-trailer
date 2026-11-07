@@ -1,0 +1,150 @@
+{
+  "1": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "3": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "5": {
+    "class_type": "MiniMaxH3ImageToVideo",
+    "inputs": {
+      "clip": [
+        "4",
+        0
+      ],
+      "vae": [
+        "1",
+        0
+      ],
+      "prompt": "A short hand-drawn creature action animation, one continuous locked-off shot of the exact supplied isolated snarling six-limbed animal on a perfectly uniform flat chroma green matte. One full-body cel, preserve the precise camera angle, drawn textures, warm ochre fur, dark muzzle, black eyes, teeth and curled tail of the provided first frame. Keep all paws in frame throughout, preserve all SIX distinct legs and their joints. Strong weight and animal acting: for the first third the shoulders dip and the back compresses, then one front paw lifts a little and plants, and the head and neck punch forwards in a short sharp lunge as the shoulders drive. The grounded hind paws stay planted at the same coordinates, almost no displacement of the center of mass. One anticipation, one strike, brief final hold. Do not move the camera or zoom, no global scale change, never drift out of frame. No surrounding scene, no floor, no shadow, no people, weapons, blood, contact objects, text, cut or extra silhouettes. Keep pure green around it for compositing. Silent.",
+      "width": 512,
+      "height": 512,
+      "length": 32,
+      "first_frame": [
+        "16",
+        0
+      ]
+    }
+  },
+  "6": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 716811
+    }
+  },
+  "7": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "15",
+        0
+      ],
+      "conditioning": [
+        "5",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "res_multistep"
+    }
+  },
+  "9": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "15",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 8,
+      "denoise": 1
+    }
+  },
+  "10": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "6",
+        0
+      ],
+      "guider": [
+        "7",
+        0
+      ],
+      "sampler": [
+        "8",
+        0
+      ],
+      "sigmas": [
+        "9",
+        0
+      ],
+      "latent_image": [
+        "5",
+        1
+      ]
+    }
+  },
+  "11": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "10",
+        0
+      ],
+      "vae": [
+        "1",
+        0
+      ]
+    }
+  },
+  "15": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "lora_name": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "16": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "md-beast-approach-green.png"
+    }
+  },
+  "19": {
+    "class_type": "SaveAnimatedWEBP",
+    "inputs": {
+      "images": [
+        "11",
+        0
+      ],
+      "filename_prefix": "video/mighty_decks/beast-approach-lossless",
+      "fps": 24.0,
+      "lossless": true,
+      "quality": 90,
+      "method": "fastest"
+    }
+  }
+}

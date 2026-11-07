@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+public/reference/
+public/storyboard/
+out/*
+!out/Fangs-CS.mp4
+!out/Fangs-EN.mp4
+!out/Fangs-CS.srt
+!out/Fangs-EN.srt
+__pycache__/
+
+!out/Fangs-*-constancy.mp4
+!out/Fangs-*-getaway.mp4

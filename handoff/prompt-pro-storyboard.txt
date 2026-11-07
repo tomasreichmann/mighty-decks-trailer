@@ -1,4 +1,4 @@
-V projektu D:\projects\mighty-decks-trailer dokonči ke schválení výtvarně a režijně dotažený STATICKÝ storyboard 50s traileru Mighty Decks: Fangs in the Sun. Odevzdej dvě samostatně použitelné verze, českou (CS) a anglickou (EN). Skonči před výrobou animatiku, videa a zvukových stop.
+V aktuálním kořeni projektu mighty-decks-trailer dokonči ke schválení výtvarně a režijně dotažený STATICKÝ storyboard 50s traileru Mighty Decks: Fangs in the Sun. Odevzdej dvě samostatně použitelné verze, českou (CS) a anglickou (EN). Skonči před výrobou animatiku, videa a zvukových stop.
 
 Nejprve si přečti handoff/START.md a storyboard/scenar-v5.md. Projdi obě jazykové sady v storyboard/screens/index.html, jednotlivé ilustrace v reference/planches a katalogové texty v reference/karty/texty-en-cs.json. Aktuální galerii používej jako pracovní obrazový podklad; oprav i vady, které v ní při kontrole objevíš.
 
@@ -13,3 +13,13 @@ Odevzdej následující výsledky do projektu a propoj je jedním rozcestníkem:
 4. Dva nahrávací scénáře VO, jeden CS a jeden EN. U každé repliky uveď mluvčího, přesný text, začátek a konec, barvu hlasu, emoci, tempo, důraz a pauzu. Vyhnankyně a hráčka mají společnou interpretku; změnu role udělá hlasový prostor a přechod ze stresu do soustředěného rozhodnutí. Pašerák šetří dechem, vypravěč dá hráčce čas. Ověř čas na přirozené vyslovení v každém jazyce, zvlášť v úseku 22–31 s. Pokud je třeba zkrátit větu nebo posunout dílčí střih, zachovej motivaci, přiznanou cenu, 50 s a celou délku CTA.
 5. Nezávislou vizuální kontrolu. Hotové exporty obou verzí předej jinému hodnotiteli (samostatnému agentovi nebo člověku), který je nesázel. Nech jej nejprve bez scénáře a bez zvuku popsat, kterou kartu hráčka schovala, kterou zahrála, kdo se zranil a co našli. Poté zkontroluje každý obraz při 1920 px a 390 px: čitelnost karet, portrétů, titulků a CTA, obličeje, celé prsty, skutečnou perspektivu, kontinuitu ruky, párování kořisti, pořadí koncovek a jazykovou shodu. Ověří také dekódování QR kódu z obou finálních exportů včetně mobilního náhledu. Ulož jeho konkrétní nálezy podle záběru a jazyka, opravy a výsledek opakované kontroly opravených exportů. Pokud nezávislé posouzení neproběhne, označ tuto položku jako otevřenou.
 
+6. Výrobní rozpad a pořadí implementace. Propoj každý obraz s názvem čisté kresby, vrstvami pozadí, kamery, karet a řeči; odděl dodané soubory od chybějících mezifází. Uveď vstupy znovupoužitelných komponent, stav ruky a načasování při přímém skoku na snímek, přepínání lokalizace, napojení ruchů i zkoušku ve 390 px. Pojmenuj první proveditelný krok a měřitelné podmínky předání animatiku.
+
+Aktuální výsledky této fáze (při revizi je aktualizuj přímo):
+- storyboard/pohyb-a-strih.md — 13 obrazů, pózy, délky držení a střihové vazby;
+- storyboard/zvuk-a-hlasy.md — mapa ruchů a samostatné nahrávací listy CS/EN;
+- handoff/technicke-reseni-animatiku.md — zdroje, komponenty a implementační kroky;
+- storyboard/vizualni-kontrola.md — slepé čtení, kontroly a opravy;
+- storyboard/vrstvy/ — lokální rozklad ilustrací pro animaci; použitelnost ověř podle protokolu jednotlivého záběru.
+Ve společném záběru u stolu použij aktuální table.png: bez břečťanu, lampa stojí na samostatném stolku, u hráččiny ruky leží tři drobné nečitelné karty, u vypravěče dobírací balíček, zprava je vidět jen roh krabice. Oči si ponechají pozornost až do střihu na kolmý detail.
+Pro výrobu animatiku použij samostatný handoff/prompt-pro-animatik.txt.

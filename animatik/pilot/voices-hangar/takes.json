@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cs-02",
+    "start": 180,
+    "latestEnd": 270,
+    "take": "smuggler-b",
+    "cut": [
+      0.416,
+      3.39
+    ],
+    "targetLufs": -22,
+    "text": "Vytáhni nás. Znám cestu přes blokádu."
+  },
+  {
+    "id": "cs-03",
+    "start": 276,
+    "latestEnd": 326,
+    "take": "exile",
+    "cut": [
+      0.675,
+      1.935
+    ],
+    "targetLufs": -20.6,
+    "text": "Nejdřív souřadnice."
+  },
+  {
+    "id": "cs-04",
+    "start": 330,
+    "latestEnd": 357,
+    "take": "smuggler-b",
+    "cut": [
+      4.404,
+      5.053
+    ],
+    "targetLufs": -20.5,
+    "text": "Posílám."
+  },
+  {
+    "id": "cs-05",
+    "start": 500,
+    "latestEnd": 556,
+    "take": "exile",
+    "cut": [
+      3.438,
+      4.915
+    ],
+    "targetLufs": -20,
+    "text": "Zadržím ji. Běžte!"
+  }
+]

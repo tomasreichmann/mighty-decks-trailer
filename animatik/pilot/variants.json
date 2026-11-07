@@ -1,0 +1,74 @@
+{
+  "baseline": {
+    "src": "files/baseline.mp4",
+    "label": "Původní 2D s pracovním hlasem"
+  },
+  "takes": [
+    {
+      "id": "quiet",
+      "label": "A · Tiché rozhodnutí",
+      "native": "files/quiet-native.mp4",
+      "dub": "files/quiet-2d.mp4"
+    },
+    {
+      "id": "urgent",
+      "label": "B · Pod tlakem",
+      "native": "files/urgent-native.mp4",
+      "dub": "files/urgent-2d.mp4"
+    }
+  ],
+  "edits": [
+    {
+      "id": "hybrid",
+      "label": "C · Rozšířené masky SAM",
+      "src": "files/hybrid-sam.mp4?v=1793999769424147600"
+    },
+    {
+      "id": "pred-sam",
+      "label": "C · Původní masky",
+      "src": "files/hybrid-vrstvy.mp4?v=1793996266932148500"
+    }
+  ],
+  "related": [
+    {
+      "src": "files/detail-masky-sam.mp4?v=1793999764465647900",
+      "label": "Detail masek před a po"
+    },
+    {
+      "src": "files/dohoda-hangar-selma-pohyb-cs.mp4?v=1794006286755647000",
+      "label": "Příchod šelmy · pohyb tlap a hlavy · CS"
+    },
+    {
+      "src": "files/dohoda-hangar-selma-cs.mp4?v=1794005766664146600",
+      "label": "Příchod šelmy · 2D póza · CS"
+    },
+    {
+      "src": "files/dohoda-hangar-selma-bez-hlasu.mp4?v=1794005834264147800",
+      "label": "Příchod šelmy · obraz a ruchy"
+    },
+    {
+      "src": "files/dohoda-hangar-selma-en.mp4?v=1794005975080649100",
+      "label": "Dohoda a hangár · příchod šelmy · EN"
+    },
+    {
+      "src": "files/dohoda-hangar-zasah-cs.mp4?v=1794000464570147500",
+      "label": "Dohoda a hangár · CS · nové hlasy a zásah"
+    },
+    {
+      "src": "files/dohoda-hangar-zasah-bez-hlasu.mp4?v=1794000481513147600",
+      "label": "Dohoda a hangár · CS · titulky a ruchy"
+    },
+    {
+      "src": "files/dohoda-hangar-zasah-en.mp4?v=1794000285509151300",
+      "label": "Dohoda a hangár · EN · nový zásah"
+    },
+    {
+      "src": "files/dohoda-hangar-cs.mp4?v=1793999613749647200",
+      "label": "Dohoda a hangár · CS"
+    },
+    {
+      "src": "files/dohoda-hangar-en.mp4?v=1793999611070148000",
+      "label": "Dohoda a hangár · EN"
+    }
+  ]
+}

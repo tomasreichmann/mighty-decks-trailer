@@ -1,0 +1,274 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "durationInFrames": 1500,
+  "shots": [
+    {
+      "id": "01-volani",
+      "in": 0,
+      "out": 180,
+      "plate": "reference/planches/opening.png",
+      "cs": {
+        "action": "Volání z korvety",
+        "caption": "Slyší nás někdo? Zůstali jsme tu tři."
+      },
+      "en": {
+        "action": "Distress call",
+        "caption": "Does anyone read? There’s three of us still aboard."
+      }
+    },
+    {
+      "id": "02-dohoda",
+      "in": 180,
+      "out": 420,
+      "plate": "reference/planches/hatch.png",
+      "cs": {
+        "action": "Souřadnice výměnou za průchod",
+        "caption": "Nejdřív souřadnice."
+      },
+      "en": {
+        "action": "Coordinates for passage",
+        "caption": "Coordinates first."
+      }
+    },
+    {
+      "id": "03-hangar",
+      "in": 420,
+      "out": 660,
+      "plate": "reference/planches/hangar.png",
+      "cs": {
+        "action": "Dráp projde vyhnankyni rukávem",
+        "caption": "Zadržím ji. Běžte!"
+      },
+      "en": {
+        "action": "The claw tears the Exile’s sleeve",
+        "caption": "I’ll hold her. Go!"
+      }
+    },
+    {
+      "id": "04a-rampa",
+      "in": 660,
+      "out": 750,
+      "plate": "reference/planches/ramp.png",
+      "cs": {
+        "action": "Závěs povolí, plech spadne do šachty",
+        "caption": "Přes rampu to bude bolet."
+      },
+      "en": {
+        "action": "A ramp section falls into the shaft",
+        "caption": "That ramp will cost you."
+      }
+    },
+    {
+      "id": "04b-stul-celek",
+      "in": 750,
+      "out": 816,
+      "plate": "reference/planches/table.png",
+      "cs": {
+        "action": "Hráčka vzhlédne od karet",
+        "caption": "Úspěch potřebuju na záchranu lodi."
+      },
+      "en": {
+        "action": "The player looks up",
+        "caption": "I need my Success to save our ship."
+      }
+    },
+    {
+      "id": "04b-volba",
+      "in": 816,
+      "out": 870,
+      "plate": "reference/planches/over-shoulder.png",
+      "cs": {
+        "action": "Prst opustí Úspěch a zastaví se uprostřed",
+        "caption": "Hraju částečný."
+      },
+      "en": {
+        "action": "Her finger leaves Success for the middle card",
+        "caption": "I’ll play the Partial."
+      }
+    },
+    {
+      "id": "04c-unik",
+      "in": 870,
+      "out": 882,
+      "plate": "reference/planches/ramp-jump.png",
+      "cs": {
+        "action": "Poslední pašerák visí za okrajem",
+        "caption": "Beru zranění."
+      },
+      "en": {
+        "action": "The last smuggler hangs over the gap",
+        "caption": "We take the injury."
+      }
+    },
+    {
+      "id": "05a-zraneni",
+      "in": 882,
+      "out": 918,
+      "plate": "reference/planches/ramp-jump.png",
+      "plateTransform": {"scale": 1.364, "x": -170, "y": -233},
+      "cs": {
+        "action": "Při zachycení mu plech rozřízne předloktí",
+        "caption": "Bez další repliky."
+      },
+      "en": {
+        "action": "The torn edge cuts his forearm",
+        "caption": "No new line."
+      }
+    },
+    {
+      "id": "04e-prah",
+      "in": 918,
+      "out": 930,
+      "plate": "reference/planches/rescue.png",
+      "cs": {
+        "action": "Trojice, mládě i bedna jsou za prahem",
+        "caption": "Bez řeči."
+      },
+      "en": {
+        "action": "Three survivors, the kit and the crate are safe",
+        "caption": "No dialogue."
+      }
+    },
+    {
+      "id": "05-bocni-tah",
+      "in": 930,
+      "out": 1080,
+      "plate": "reference/planches/thrust.png",
+      "cs": {
+        "action": "Schovaný Úspěch zachrání člun",
+        "caption": "Teď. Plný boční tah."
+      },
+      "en": {
+        "action": "The saved Success gets the ship clear",
+        "caption": "Now. Full lateral thrust."
+      }
+    },
+    {
+      "id": "06-korist",
+      "in": 1080,
+      "out": 1230,
+      "plate": "reference/planches/loot.png",
+      "cs": {
+        "action": "Čepel vlevo, kyrys s přezkou vpravo",
+        "caption": "Bez řeči · přezka, pak dech mláděte."
+      },
+      "en": {
+        "action": "Blade on the left, cuirass on the right",
+        "caption": "No dialogue · a buckle, then the kit’s breath."
+      }
+    },
+    {
+      "id": "07-logo",
+      "in": 1230,
+      "out": 1350,
+      "plate": "reference/grafika/paper.png",
+      "cs": {
+        "action": "Logo mezi kartami dvou světů",
+        "caption": "Bez řeči."
+      },
+      "en": {
+        "action": "The logo between two worlds of cards",
+        "caption": "No dialogue."
+      }
+    },
+    {
+      "id": "08-cta",
+      "in": 1350,
+      "out": 1500,
+      "plate": "reference/planches/cta-herna.png",
+      "cs": {
+        "action": "Krabice, pravidla a karty k tisku",
+        "caption": "Vytiskni si karty a zahraj si Mighty Decks."
+      },
+      "en": {
+        "action": "The box, rules and printable cards",
+        "caption": "Print your deck and play Mighty Decks."
+      }
+    }
+  ],
+  "cardFaces": {
+    "U": "success",
+    "C": "partial-success",
+    "S": "fumble"
+  },
+  "cardPlays": [
+    {
+      "shot": "02-dohoda",
+      "before": [
+        "U1",
+        "U2",
+        "C1"
+      ],
+      "card": "U1",
+      "pick": 270,
+      "hold": 278,
+      "resolve": 330,
+      "draw": 390,
+      "replacement": "S1",
+      "after": [
+        "U2",
+        "C1",
+        "S1"
+      ]
+    },
+    {
+      "shot": "03-hangar",
+      "before": [
+        "U2",
+        "C1",
+        "S1"
+      ],
+      "card": "C1",
+      "pick": 480,
+      "hold": 488,
+      "resolve": 534,
+      "draw": 624,
+      "replacement": "C2",
+      "after": [
+        "U2",
+        "C2",
+        "S1"
+      ]
+    },
+    {
+      "shot": "04b-volba",
+      "before": [
+        "U2",
+        "C2",
+        "S1"
+      ],
+      "card": "C2",
+      "pick": 840,
+      "hold": 848,
+      "resolve": 870,
+      "draw": 920,
+      "replacement": "S2",
+      "after": [
+        "U2",
+        "S2",
+        "S1"
+      ]
+    },
+    {
+      "shot": "05-bocni-tah",
+      "before": [
+        "U2",
+        "S2",
+        "S1"
+      ],
+      "card": "U2",
+      "pick": 944,
+      "hold": 952,
+      "resolve": 984,
+      "draw": 1044,
+      "replacement": "U3",
+      "after": [
+        "U3",
+        "S2",
+        "S1"
+      ]
+    }
+  ]
+}

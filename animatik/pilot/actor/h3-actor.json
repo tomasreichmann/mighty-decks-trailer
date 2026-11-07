@@ -1,0 +1,217 @@
+{
+  "1": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "2": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "3": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "5": {
+    "class_type": "MiniMaxH3ImageToVideo",
+    "inputs": {
+      "clip": [
+        "4",
+        0
+      ],
+      "vae": [
+        "1",
+        0
+      ],
+      "prompt": "Five-second 2D hand-inked animation, an isolated female dialogue cel against an absolutely flat solid chroma green screen. Two separated pieces of animation artwork, a right-facing woman's inked head floating at the top and an isolated forearm and hand at the bottom. Keep the blank green space between the two pieces. Only animate these two supplied pieces in place. Fixed scale, locked camera. Mouth and eyes move naturally in profile. She speaks Czech with a quiet, warm, confident voice, looking to the right, taking a small breath as her gaze drops. Her wrist stays planted and her fingertips flex just a little, as she decides. Keep shoulders and torso absent. Hair shifts only slightly. Her mouth articulates clearly. No other people, props, ground, cast shadows, table, card, lettering, cuts, subtitles or environment. Remain on the flat green matte for the entire clip. Native Czech speech, exactly: “Úspěch potřebuju na záchranu lodi. Hraju částečný. Beru zranění.” First short natural breath, first line at 0.27 seconds. Very intimate, level, quietly convinced. Low, warm and dry. Measured first phrase, tiny breath before her decision. No music. No other speech.",
+      "width": 448,
+      "height": 416,
+      "length": 124,
+      "first_frame": [
+        "16",
+        0
+      ]
+    }
+  },
+  "6": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 716305
+    }
+  },
+  "7": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "15",
+        0
+      ],
+      "conditioning": [
+        "5",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "res_multistep"
+    }
+  },
+  "9": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "15",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 8,
+      "denoise": 1
+    }
+  },
+  "10": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "6",
+        0
+      ],
+      "guider": [
+        "7",
+        0
+      ],
+      "sampler": [
+        "8",
+        0
+      ],
+      "sigmas": [
+        "9",
+        0
+      ],
+      "latent_image": [
+        "5",
+        1
+      ]
+    }
+  },
+  "11": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "10",
+        0
+      ],
+      "vae": [
+        "1",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "10",
+        0
+      ],
+      "vae": [
+        "2",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "12",
+        0
+      ],
+      "fps": 24,
+      "bit_depth": 8
+    }
+  },
+  "14": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "13",
+        0
+      ],
+      "filename_prefix": "video/mighty_decks/actor-c",
+      "format": "mp4",
+      "format.codec": "h264"
+    }
+  },
+  "15": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "lora_name": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "16": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "md-actor-green.png"
+    }
+  },
+  "17": {
+    "class_type": "SaveAudio",
+    "inputs": {
+      "audio": [
+        "12",
+        0
+      ],
+      "filename_prefix": "audio/mighty_decks/actor-c"
+    }
+  },
+  "18": {
+    "class_type": "ImageFromBatch",
+    "inputs": {
+      "image": [
+        "11",
+        0
+      ],
+      "batch_index": 0,
+      "length": 68
+    }
+  },
+  "19": {
+    "class_type": "SaveAnimatedWEBP",
+    "inputs": {
+      "images": [
+        "18",
+        0
+      ],
+      "filename_prefix": "video/mighty_decks/actor-c-lossless",
+      "fps": 24.0,
+      "lossless": true,
+      "quality": 90,
+      "method": "fastest"
+    }
+  }
+}

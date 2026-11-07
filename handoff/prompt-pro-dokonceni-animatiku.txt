@@ -1,0 +1,43 @@
+Dokonči všechny zbývající scény animatiku „Mighty Decks: Fangs in the Sun“ v existujícím projektu C:\Projects\mighty-decks-trailer. Jsi vedoucí střihu a odpovídáš za oba přehratelné výstupy CS a EN. Pracuj v aktuálním checkoutu. Začni implementací, rozděl práci mezi subagenty a pošli první ověřenou URL hned, jak bude co posoudit. Pokračuj až k úplným 50sekundovým exportům.
+
+Výchozí střih
+
+Přečti storyboard/strih.json, storyboard/pohyb-a-strih.md, storyboard/zvuk-a-hlasy.md a storyboard/scenar-v5.md. V handoff/technicke-reseni-animatiku.md najdeš komponenty, v animatik/README.md příkazy a v animatik/plates.md pracovní náhrady. Otevři si skutečné MP4. Pro později přepracované záběry platí následující režie a aktuální piloty. Čísla snímků jsou absolutní při 30 fps, intervaly mají konec otevřený.
+
+• Dohoda a Hangár, 6–22 s. Navazuj na dohoda-hangar-selma-pohyb-cs.mp4 v animatik/pilot/files/. Je to doporučená varianta k výběru, vedle ní existuje 2D verze se stejným zvukem. Pro pracovní komplet použij pohyb tlap a hlavy (beastMotion) a ponech 2D variantu k porovnání. Šelmu slyšíme od 390 za dveřmi, vstupuje zleva, na 460 se zakousne do pažby a na 534 dráp poraní vyhnankyni. Zranění je u ní. Použij hotové české hlasy, vrčení, řev, úder i vinětu. K dočištění patří tmavý obrys za zvednutou tlapou a kontakt nohou posádky při odchodu. Katalogový líc karabiny použij pouze při doložené shodě v obou jazycích; stávající detail zbraně funguje.
+• Stůl a cena, 25–31 s. Uživatel vybral směr C, H3 + 2D. Referencí je animatik/pilot/files/hybrid-sam.mp4 a jeho kompozice animatik/pilot/Hybrid.tsx. Přenes vrstvy a časování do hlavní osy. V pilotu první věta dohraje na tváři, na 2,20 s se střihne ke kartám, na 4,00 s dopadne bedna, od 4,40 do 5,60 s je vidět rána, karta Zranění a jméno PAŠERÁK, pak bezpečný práh. To má přednost před kratším detailem ve starém storyboardu. V EN osaď anglické líce, titulky a skutečně načasovanou řeč. Obě verze se potkají v kokpitu na 930.
+
+Subagentic execution — rozděl práci a spoj ji v jednom střihu
+
+Využij skutečné subagenty. Při čtyřech dostupných slotech pracuj jako vedoucí se třemi dalšími lidmi v těchto rolích:
+1. Obraz A vlastní Volání a úsek Rampa → Stůl → Volba → Únik → Zranění → Práh. Dodá vrstvy, mezifáze a krátkou ukázku hlavního rozhodnutí se zvukem.
+2. Obraz B vlastní Boční tah, Kořist, Logo a CTA. Dodá také cílené dočištění Hangáru. Ověří napojení na snímek 930 a lokalizované produktové obrazy.
+3. Zvuk vlastní zbývající herecké repliky CS/EN a ruchy. Pro každé místo odevzdá vybranou stopu, skutečný začátek a konec řeči a mix v obraze.
+
+Sám vlastníš společnou časovou osu, stav ruky, integraci, titulky a publikaci. Před paralelní prací dej každému agentovi rozsah snímků, seznam souborů, které smí upravovat, a krátce popiš vstupní a výstupní pózu. Jednu lokální GPU frontu plánuj postupně, příprava 2D vrstev a střih mohou běžet souběžně. Po první integraci uvolni slot pro nezávislého kritika. Každý nalezený problém vrať konkrétnímu autorovi k opravě.
+
+Co musí divák vidět a slyšet
+
+• 01-volani, 0–6 s. Z pevného kokpitu sleduj korvetu proti slunci. Na konci podrž siluetu. Třetí prasknutí rádia otevře unavenou prosbu pašeráka. Kruhový kotouč přejde střihem v průzor Dohody.
+• 02-dohoda a 03-hangar, 6–22 s. Zapoj uvedený střih do obou masterů. Po souřadnicích se otevřou dveře, po povelu trojice odnese bednu s mládětem. Z pohybu posádky střihni na povolující plech.
+• 04a-rampa, 22–25 s. Ukaž, co se odlomilo a kudy musí posádka dál. Před pádem i po něm musí poloha pevného prahu vysvětlovat hloubku šachty. Nad fikcí zazní klidné varování vypravěče, pak ruch kovu ustoupí tiché herně.
+• 04b-stul-celek a 04b-volba, 25–29 s. Použij profil a ruku hráčky s rozšířenou maskou SAM 2. Vysloví důvod, sklopí pohled a prstem přejde z levého U₂ na prostřední Č₂. V kolmém detailu zvedne jedinou kartu. Divák musí rozumět, proč si nechává Úspěch.
+• 04c-unik, 05a-zraneni a 04e-prah, 29–31 s. Položení Č₂ střihni na náraz bedny. Doplň sklouznutí nohy a tah zachycené ruky. Při „Beru zranění.“ / “We take the injury.” musí divák vidět předloktí pašeráka a jeho kartu. Ukaž všechny tři, bednu i mládě za prahem, potom dober S₂.
+• 05-bocni-tah, 31–36 s. U₂ je při vstupu pořád vlevo. Na 944 ho hráčka zahraje, na 984 zabere tryska, troska mine kokpit a teprve potom se doplní U₃. V EN otevři plnou trysku po 990, aby dozněl povel.
+• 06-korist, 36–41 s. Střih do ticha a kolmého pohledu. Svázané předloktí u pantu propojí nález s předchozí cenou. Na 1092 cvakne západka, odhal levou čepel s kartou, potom pravý kyrys s kartou. Na 1170 se mládě dotkne přezky. Poslední dvě sekundy nech nález číst, s dechem mláděte. Pro viditelné otevření víka dokresli zavřenou pózu, případně odhal obsah střihem na cvaknutí.
+• 07-logo, 41–45 s. Přesuň původní logo do středu a nech ho krátce samostatně. Vlevo vyskládej výsledek, Zranění a oba nálezy; vpravo Domobranu, Žalář, Kuši a Lucernu ve správném jazyce. Od 1284 drž obraz.
+• 08-cta, 45–50 s. Od prvního do posledního snímku ukaž celou krabici, adresu https://board-game-prototypes.netlify.app/mighty-decks a QR s bílým okrajem. Hráčka pozve diváka ke hře vlastním hlasem. Kamera a sazba stojí až do 1499.
+
+Obraz a zvuk vyráběj nejdřív jako rychlý náhled v 540p nebo 360p. Pro kulisy, statické ilustrace, logo, krabici, karty, portréty, titulky a QR používej samostatné 2D vrstvy. MiniMax H3 dostane jen část kresby, která potřebuje složitý pohyb, například ústa, ruku nebo tlapu. V ComfyUI podle potřeby sleduj masku pomocí SAM 2. Pokud kresba funguje lépe, použij ji s audiem z vybraného H3 záběru. Dbej na přirozenou češtinu a angličtinu, stejný hlas téže postavy a rozdíl mezi kokpitem, rádiem a hernou. Varianty předkládej tam, kde volba skutečně mění herectví, srozumitelnost nebo čitelnost akce.
+
+Adversarial verification — zkus prokázat, že střih selhal
+
+Kritik, který záběr nevyráběl, dostane nejprve jen vyrenderované video. Při prvním přehrání 1× mu neprozrazuj očekávané odpovědi. Vyžádej si jeho vlastní popis, teprve potom ho porovnej se scénářem:
+• Beze zvuku a při šířce 390 px: odkud přišla šelma, kdo utrpěl každé ze dvou zranění, kterou kartu hráčka nechala na stole a při čem ji nakonec použila? Nech kritika ukázat okamžik, kdy je posádka v bezpečí, a spárovat oba nálezy s líci.
+• Bez obrazu: ať přepíše důvod, volbu a cenu v CS i EN a určí pořadí povelu, nárazu, trhání látky a úniku. Poslechni také mix v monu v pásmu malého reproduktoru. Automatický přepis doplň posouzením rytmu, emocí a výslovnosti.
+• Zkus rozbít kontinuitu přímým skokem na 330, 534, 870 a 930 a návratem o snímek. Sleduj fyzická ID: U₁ → S₁, Č₁ → Č₂, Č₂ → S₂, U₂ → U₃. Na 930 musí být U₂, S₂, S₁. Zranění má vlastního majitele mimo tři sloty. U pohyblivých masek zkontroluj krajní polohy, manžetu, prsty, tlapy a okraje karet.
+• Ověř oba finální soubory: 1920 × 1080, 30 fps, 1 500 snímků, přesně 50 s, synchronní SRT. Dekóduj správnou cílovou adresu z QR na 1350, 1425 a 1499 v plné i mobilní velikosti. Spusť v animatik/ také npm run lint, node scripts/check-hand.mjs, npm run verify a python scripts/verify-audio.py.
+
+Každou podstatnou vadu popiš jazykem, časem nebo snímkem, pozorovaným dějem a očekávaným výsledkem. Oprav ji, znovu vyexportuj postižený úsek a nech ho přezkoušet v souvislosti obou sousedních záběrů. Pokud pracovní náhrada přetrvá, pojmenuj přesně, co divák uvidí nebo uslyší.
+
+Odevzdej přímé funkční URL pro oba celé animatiky, MP4 a SRT v animatik/out/, krátký soupis zbývajících pracovních náhrad a případné varianty k výběru. První prioritou pro průběžný odkaz je souvislý úsek 22–36 s, kde se rozhodnutí u stolu promění v zranění a ušetřený Úspěch zachrání loď.

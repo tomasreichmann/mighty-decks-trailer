@@ -1,0 +1,126 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "ming_image_0.1_design_layer_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "ming_image_0.1_ling_mini_2.0_layer_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "ming_image_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "input-768x432.png"
+    }
+  },
+  "5": {
+    "class_type": "TextEncodeMingImageEdit",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "prompt": "Number of layers: 3. Decompose this exact supplied ink illustration into separate registered RGBA layers in the original camera view, in front-to-back order. Layer 1: The short-haired female player on the left, including her visible upper body, sleeves and arms down to the fingertips. Layer 2: The bearded game master on the right, including his folded arms and clothing. Layer 3: The entire room, lamp on side table, shelves and wooden play table, all cards and cropped box corner; repaint the hidden areas behind BOTH people. Render all pixels outside their object fully transparent, except for the last complete opaque background. Preserve exact placement, perspective, colors, expressive ink, silhouettes and lighting. No borders, labels or invented items. No duplicate subjects in the background.",
+      "images.image_1": [
+        "4",
+        0
+      ]
+    }
+  },
+  "6": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "5",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "EmptyQwenImageLayeredLatentImage",
+    "inputs": {
+      "width": 768,
+      "height": 432,
+      "layers": 3,
+      "batch_size": 1
+    }
+  },
+  "8": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "seed": 42,
+      "steps": 8,
+      "cfg": 2.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "positive": [
+        "5",
+        0
+      ],
+      "negative": [
+        "6",
+        0
+      ],
+      "latent_image": [
+        "7",
+        0
+      ],
+      "denoise": 1
+    }
+  },
+  "9": {
+    "class_type": "LatentCutToBatch",
+    "inputs": {
+      "samples": [
+        "8",
+        0
+      ],
+      "dim": "t",
+      "slice_size": 1
+    }
+  },
+  "10": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "9",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "11": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "10",
+        0
+      ],
+      "filename_prefix": "MightyDecks/MingLayer"
+    }
+  }
+}

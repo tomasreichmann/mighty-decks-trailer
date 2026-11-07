@@ -1,0 +1,248 @@
+{
+  "cs": [
+    {
+      "text": "Slyší nás někdo? Zůstali jsme tu tři.",
+      "startFrame": 56,
+      "endFrame": 134,
+      "startMs": 1867,
+      "endMs": 4467,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Pašerák",
+      "file": "performance/cs-01.wav"
+    },
+    {
+      "text": "Vytáhni nás. Znám cestu přes blokádu.",
+      "startFrame": 180,
+      "endFrame": 270,
+      "startMs": 6000,
+      "endMs": 9000,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Pašerák",
+      "file": "performance/cs-02.wav"
+    },
+    {
+      "text": "Nejdřív souřadnice.",
+      "startFrame": 276,
+      "endFrame": 314,
+      "startMs": 9200,
+      "endMs": 10467,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Vyhnankyně",
+      "file": "performance/cs-03.wav"
+    },
+    {
+      "text": "Posílám.",
+      "startFrame": 330,
+      "endFrame": 350,
+      "startMs": 11000,
+      "endMs": 11667,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Pašerák",
+      "file": "performance/cs-04.wav"
+    },
+    {
+      "text": "Zadržím ji. Běžte!",
+      "startFrame": 500,
+      "endFrame": 545,
+      "startMs": 16667,
+      "endMs": 18167,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Vyhnankyně",
+      "file": "performance/cs-05.wav"
+    },
+    {
+      "text": "Přes rampu to bude bolet.",
+      "startFrame": 671,
+      "endFrame": 711,
+      "startMs": 22367,
+      "endMs": 23700,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Vypravěč",
+      "file": "cs-06.wav"
+    },
+    {
+      "text": "Úspěch potřebuju na záchranu lodi.",
+      "startFrame": 758,
+      "endFrame": 816,
+      "startMs": 25267,
+      "endMs": 27200,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Hráčka",
+      "file": "performance/cs-07.wav"
+    },
+    {
+      "text": "Hraju částečný.",
+      "startFrame": 824,
+      "endFrame": 859,
+      "startMs": 27467,
+      "endMs": 28633,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Hráčka",
+      "file": "performance/cs-08.wav"
+    },
+    {
+      "text": "Beru zranění.",
+      "startFrame": 867,
+      "endFrame": 894,
+      "startMs": 28900,
+      "endMs": 29800,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Hráčka",
+      "file": "performance/cs-09.wav"
+    },
+    {
+      "text": "Teď. Plný boční tah.",
+      "startFrame": 930,
+      "endFrame": 983,
+      "startMs": 31000,
+      "endMs": 32767,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Hráčka",
+      "file": "cs-10.wav"
+    },
+    {
+      "text": "Vytiskni si karty a zahraj si Mighty Decks.",
+      "startFrame": 1370,
+      "endFrame": 1441,
+      "startMs": 45667,
+      "endMs": 48033,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Hráčka",
+      "file": "performance/cs-11.wav"
+    }
+  ],
+  "en": [
+    {
+      "text": "Does anyone read? There’s three of us still aboard.",
+      "startFrame": 56,
+      "endFrame": 126,
+      "startMs": 1867,
+      "endMs": 4200,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Smuggler",
+      "file": "en-01.wav"
+    },
+    {
+      "text": "Get us out. I know a way past the blockade.",
+      "startFrame": 180,
+      "endFrame": 248,
+      "startMs": 6000,
+      "endMs": 8267,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Smuggler",
+      "file": "en-02.wav"
+    },
+    {
+      "text": "Coordinates first.",
+      "startFrame": 276,
+      "endFrame": 309,
+      "startMs": 9200,
+      "endMs": 10300,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Exile",
+      "file": "en-03.wav"
+    },
+    {
+      "text": "Sending.",
+      "startFrame": 330,
+      "endFrame": 342,
+      "startMs": 11000,
+      "endMs": 11400,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Smuggler",
+      "file": "en-04.wav"
+    },
+    {
+      "text": "I’ll hold her. Go!",
+      "startFrame": 500,
+      "endFrame": 530,
+      "startMs": 16667,
+      "endMs": 17667,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Exile",
+      "file": "en-05.wav"
+    },
+    {
+      "text": "That ramp will cost you.",
+      "startFrame": 671,
+      "endFrame": 707,
+      "startMs": 22367,
+      "endMs": 23567,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Storyteller",
+      "file": "en-06.wav"
+    },
+    {
+      "text": "I need my Success to save our ship.",
+      "startFrame": 758,
+      "endFrame": 813,
+      "startMs": 25267,
+      "endMs": 27100,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Player",
+      "file": "performance/en-07.wav"
+    },
+    {
+      "text": "I’ll play the Partial.",
+      "startFrame": 824,
+      "endFrame": 851,
+      "startMs": 27467,
+      "endMs": 28367,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Player",
+      "file": "performance/en-08.wav"
+    },
+    {
+      "text": "We take the injury.",
+      "startFrame": 873,
+      "endFrame": 902,
+      "startMs": 29100,
+      "endMs": 30067,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Player",
+      "file": "performance/en-09.wav"
+    },
+    {
+      "text": "Now. Full lateral thrust.",
+      "startFrame": 930,
+      "endFrame": 980,
+      "startMs": 31000,
+      "endMs": 32667,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Player",
+      "file": "en-10.wav"
+    },
+    {
+      "text": "Print your deck and play Mighty Decks.",
+      "startFrame": 1370,
+      "endFrame": 1423,
+      "startMs": 45667,
+      "endMs": 47433,
+      "timestampMs": null,
+      "confidence": null,
+      "speaker": "Player",
+      "file": "en-11.wav"
+    }
+  ]
+}

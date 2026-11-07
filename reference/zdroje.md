@@ -14,6 +14,10 @@ Pro aktuální storyboard vzniklo devět samostatných tušových ilustrací pod
 
 Společný záběr u stolu, kolmý detail a nová bedna byly následně samostatně překresleny podle referencí a srovnány do formátu 1920 × 1080.
 
+Polocelkový [table.png](planches/table.png) byl upraven pomocí ImageGen s původní kresbou a [grafikou krabice](grafika/mighty-decks-krabice.png) jako předlohami. Herna má stolní lampu na samostatném stolku bez břečťanu, naznačenou řadu tří karet, balíček a roh krabice. Portrét, titulky a rohové logo jsou vysazené až v lokalizovaných exportech. [Skript pro tabule](../tools/storyboard_boards.py) z nich sestaví barevné tabule i detail rampy.
+
+**Animovatelné vrstvy.** Čisté ilustrace ze složky planches byly rozložené lokálně v ComfyUI modelem Ming Design-Layer. [Manifest](../storyboard/vrstvy/manifest.json) váže každou sadu k otisku zdrojové kresby, pořadí RGBA vrstev a zkoušce posunu. Obrázky v planches zůstávají obrazovou referencí. Lokalizované líce, titulky, QR a rohové logo do modelu nevstupují. Skutečné líce pro společný stůl a pro detail ruky jsou zvlášť v [CS](../storyboard/overlays/cs) a [EN](../storyboard/overlays/en).
+
 ## České názvy a pravidla karet
 
 Prohledány byly místní kopie mighty-decks-ai-storyteller a board-game-prototypes. V prvním repozitáři spec/assetCards.ts uvádí Light Weapon a Heavy Armor anglicky. České názvy Úspěch, Částečný úspěch, Selhání, Zranění a stručný zápis +2 Efekt / +1 Efekt vycházejí z dat staršího prototypu. Jeho pravidla pro Katastrofu, Zranění a Částečný úspěch se místy liší od dnešního katalogu. U těchto karet je použit stručný český překlad současných mechanik; zdrojové anglické věty i české znění jsou vedle sebe v [lokalizační tabulce](karty/texty-en-cs.json). Pro titul Heavy Armor jsme zvolili Těžká zbroj. [České výsledky](https://github.com/tomasreichmann/board-game-prototypes/blob/main/src/prototypes/kick-ass-cards/data/outcomes.csv) · [Česká zranění a efekty](https://github.com/tomasreichmann/board-game-prototypes/blob/main/src/prototypes/kick-ass-cards/data/effects.csv)

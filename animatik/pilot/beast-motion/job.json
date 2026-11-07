@@ -1,0 +1,31 @@
+{
+  "prompt_id": "ad618baf-ff18-4b72-9283-1b719d07ba08",
+  "endpoint": "http://127.0.0.1:8188",
+  "seed": 716811,
+  "elapsed_seconds": 46.342,
+  "output_node": 19,
+  "status": "success",
+  "webp_files": 29,
+  "frame_range_inclusive": [
+    431,
+    459
+  ],
+  "canvas": [
+    512,
+    512
+  ],
+  "source_inset": [
+    32,
+    32,
+    448,
+    448
+  ],
+  "first_pose": "original 2D cutout",
+  "alpha_gt_128_union_inclusive": [
+    10,
+    11,
+    479,
+    469
+  ],
+  "max_green_excess_over_15_with_alpha_over_32_per_frame": 0
+}
